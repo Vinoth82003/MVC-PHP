@@ -16,6 +16,16 @@ switch ($action) {
         $controller = new StudentController($conn);
         $controller->index();
         break;
+    case 'add':
+        require_once('../app/controllers/StudentController.php');
+        $controller = new StudentController($conn);
+        $controller->add();
+        break;
+    case 'del':
+        require_once('../app/controllers/StudentController.php');
+        $controller = new StudentController($conn);
+        $controller->del();
+        break;
     default:
         echo "404 Not Found";
         break;
