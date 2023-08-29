@@ -1,5 +1,5 @@
 <?php
-require_once('../models/StudentModel.php');
+require_once(__DIR__ . '/../models/StudentModel.php');
 
 class StudentController {
     private $model;
@@ -10,7 +10,7 @@ class StudentController {
 
     public function index() {
         $students = $this->model->getAllStudents();
-        include('../views/student_list.php');
+        include(__DIR__ . '/../views/student_list.php');
     }
 }
 ?>

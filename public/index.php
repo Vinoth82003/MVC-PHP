@@ -1,5 +1,8 @@
 <?php
-require_once('../config/database.php');
+require_once('../config/database.php'); // Include the database configuration
+
+$config = include('../config/database.php'); // Assign the configuration array to $config variable
+
 $conn = new PDO(
     "mysql:host={$config['host']};dbname={$config['dbname']}",
     $config['dbuser'],
