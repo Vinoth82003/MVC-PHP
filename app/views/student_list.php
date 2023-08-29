@@ -4,6 +4,9 @@
     <title>Student List</title>
 </head>
 <body>
+    <form action="index.php?action=staff" method="post">
+        <input type="submit" value="staffs">
+    </form>
     <h1>Student List</h1>
     <table>
         <tr>

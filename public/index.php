@@ -26,6 +26,21 @@ switch ($action) {
         $controller = new StudentController($conn);
         $controller->del();
         break;
+    case 'staff':
+        require_once('../app/controllers/staffController.php');
+        $controller = new staffController($conn);
+        $controller->staff();
+        break;
+    case 'addstaff':
+        require_once('../app/controllers/staffController.php');
+        $controller = new staffController($conn);
+        $controller->addstaff();
+        break;
+    case 'delstaff':
+        require_once('../app/controllers/staffController.php');
+        $controller = new staffController($conn);
+        $controller->delstaff();
+        break;
     default:
         echo "404 Not Found";
         break;
