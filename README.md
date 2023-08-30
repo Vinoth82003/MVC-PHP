@@ -5,24 +5,6 @@ Certainly! Here's an example `README.md` file that you can include in your proje
 
 This project is a simple implementation of a Student Management System using the Model-View-Controller (MVC) architecture in PHP.
 
-## Project Structure
-
-The project follows a structured folder hierarchy to organize the codebase:
-
-```
-mvc/
-├── app/
-│   ├── controllers/
-│   │   └── StudentController.php
-│   ├── models/
-│   │   └── StudentModel.php
-│   ├── views/
-│   │   └── student_list.php
-├── public/
-│   ├── index.php
-├── config/
-│   └── database.php
-```
 
 - The `app/` directory contains the application's core components:
   - `controllers/` holds the controller classes responsible for handling user requests.
